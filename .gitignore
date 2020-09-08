@@ -26,15 +26,13 @@ hs_err_pid*
 /target/
 /test-output/
 /env.conf
-.classpath
-.project
-.settings/
-/.metadata/
-/.recommenders/
+.classpath*
+.project*
+.settings*
 ApiTestFramework/target/
 ApiTestFramework/pom.xml
-ApiTestFramework/src/
-ApiTestFramework/.settings
-ApiTestFramework/.classpath
-ApiTestFramework/.project
+
+
+
+
 
