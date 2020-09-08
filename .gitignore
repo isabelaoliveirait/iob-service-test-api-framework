@@ -30,7 +30,7 @@ hs_err_pid*
 .project*
 .settings*
 ApiTestFramework/target/
-ApiTestFramework/pom.xml
+
 
 
 
