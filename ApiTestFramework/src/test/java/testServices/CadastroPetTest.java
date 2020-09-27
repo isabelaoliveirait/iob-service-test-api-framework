@@ -12,6 +12,7 @@ import org.junit.Test;
 import entitites.Category;
 import entitites.PetPost;
 import entitites.Tag;
+import massa.MassaTestPet;
 import utils.RestUtils;
 
 public class CadastroPetTest {
@@ -36,15 +37,7 @@ public class CadastroPetTest {
 		RestUtils.setUri(uri);
 		RestUtils.setEndpoint(endpoint);
 		
-		
-		
-		Category category = new Category(0, "teste api");
-		List<Object> listPhoto = new ArrayList<Object>();
-		listPhoto.add("string");
-		Tag tag = new Tag(0, "tag");
-		List<LinkedHashMap<String, Object>> tags = new ArrayList<LinkedHashMap<String, Object>>();
-		tags.add(tag.get());
-		PetPost petPost = new PetPost(category, "doggie", listPhoto, tags, "available");
+		PetPost petPost = MassaTestPet.geradorMassa();
 		
 		RestUtils.post(petPost.get());
 		assertEquals(200, RestUtils.getStatusCode());
